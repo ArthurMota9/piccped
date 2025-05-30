@@ -19,8 +19,8 @@ const getI18n = () => {
 	if (typeof window !== "undefined") {
 		const languageByLocalStorage = localStorage.getItem("i18n"); 
 		if (languageByLocalStorage) return languageByLocalStorage;
-		localStorage.setItem('i18n', 'pt-BR');
-		return 'pt-BR';
+		localStorage.setItem('i18n', 'en');
+		return 'en';
 	}
 };
 export default class App extends Component {
